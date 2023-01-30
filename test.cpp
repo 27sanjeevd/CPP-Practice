@@ -1,14 +1,18 @@
 #include <iostream>
+using namespace std;
 
-int main()
-{
-	std::cout << "Enter a number! ";
+int calculate(int x, int y, bool temp) {
+    if (temp){
+        goto next;
+    }
 
-    int num{ };
-    std::cin >> num;
+    cout << "asd";
+    next:
 
-    std::cout << "Double that is " << num * 2 << "\n";
-    std::cout << "Triple that is " << num * 3 << "\n";
+    cout << "water";
+    return 5;
+}
 
-    return 0;
+int main() {
+    cout << calculate(5, 10, false);
 }
